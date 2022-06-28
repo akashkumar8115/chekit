@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS Display property</title>
+    <style>
+        body {
+            background-image: url("/IMG_20220523_163526.jpg");
+            background-size: 100%;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            background-color: rgb(35, 31, 41);
+            border-radius: 30px;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            margin: 13px 20px;
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .search {
+            float: right;
+            color: white;
+            padding: 12px 75px;
+        }
+
+        .navbar input {
+            border: 2px solid black;
+            border-radius: 14px;
+            padding: 3px 17px;
+            width: 129px;
+        }
+
+        a:visited {
+            color: brown;
+        }
+
+        .navbar li a:hover {
+            color: red
+        }
+
+        header {
+            /* border: 2px solid rgb(88, 0, 0); */
+            margin: auto;
+            width: 1200px;
+            /* background-color: antiquewhite; */
+        }
+
+        img {
+            margin: auto;
+            display: block;
+            width: 34px;
+        }
+
+        h3 {
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0px;
+        }
+
+        .box {
+            /* border: 4px solid black;
+            background-color: grey; */
+            text-emphasis-style: bold;
+            margin: 4px 0px;
+            padding: 23px;
+            width: 33%;
+            box-sizing: border-box;
+            display: inline-block;
+        }
+
+        .container {
+            margin: auto;
+            width: 1200px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li> <a href="https://nith.ac.in/" target="_blank">home</a> </li>
+                <li><a href="https://nith.ac.in/about-city" target="_blank">about</a> </li>
+                <li><a href="https://nith.ac.in/institute-coordinator" target="_blank">service</a></li>
+                <li><a href="https://nith.ac.in/hostels-at-nith" target="_blank">contact</a></li>
+
+                <li><a href="https://facebook.com" target="_blank" rel="noopener noreferrer"> facebook</a></li>
+                <li><a href="https://google.com" target="_blank" rel="noopener noreferrer">go to google</a></li>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="search in box">
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <header class="top">
+        <img src="https://lh3.googleusercontent.com/wgqmPl9VN08ZAT-YOrzewZGeqFsyRw68iZzkc_dBEvd0SqbC300_0qNiieMSKODYwXcIrhrcqrbziKxTJ5BvV0XCiQ=w128-h128-e365-rj-sc0x00ffffff"
+            alt=" not show">
+        <h3> <u> Welcome to akash blog </u></h3>
+    </header>
+    <div class="container">
+        <div class="box">
+            <h4 class="heading">Heading 1</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, harum ipsam aliquid deleniti, vitae
+                labore cum laudantium a blanditiis est voluptates dolorum consequuntur. Aliquam corporis, fuga
+                consectetur rerum molestias consequatur tempora natus sed laborum recusandae fugit harum soluta
+                inventore enim. Aspernatur !</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading 2</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, harum ipsam aliquid deleniti, vitae
+                labore cum laudantium a blanditiis est voluptates dolorum consequuntur. Aliquam corporis, fuga
+                consectetur rerum molestias consequatur tempora natus sed laborum recusandae fugit harum soluta
+                inventore aperiam cum reprehenderit!</p>
+        </div>
+        <div class="box">
+            <h4 class="heading">Heading 3</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, harum ipsam aliquid deleniti, vitae
+                labore cum laudantium a blanditiis est voluptates dolorum consequuntur. Aliquam corporis, fuga
+                consectetur rerum molestias consequatur tempora natus sed laborum recusandae fugit harum soluta
+                inventore enim. cum reprehenderit!</p>
+        </div>
+    </div>
+</body>
+
+</html>
